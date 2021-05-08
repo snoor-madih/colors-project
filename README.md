@@ -19,7 +19,12 @@ Your challenge is to build out this cool color generating website that helps the
 
 
 ### Bonus!
-If you've finished the above requirements, awesome work!
+If you've finished the above requirements, awesome work!<br>
 You can make your color picker project better by implementing the following:
 - When clicking on any of the hexidecimal color codes, it should copy that color code to the clipboard
 ![6](https://user-images.githubusercontent.com/32653855/117526725-981c1380-afcf-11eb-93ca-0f6d825a3542.png)
+
+
+### Where to get the icons?
+Use Font awesome. If you don't know about it, you can find how to use it here.<br>
+To learn more about font awesome, visit their website.
