@@ -29,3 +29,17 @@ You can make your color picker project better by implementing the following:
 Use Font awesome. If you don't know about it, you can find how to use it [here](https://www.w3schools.com/icons/fontawesome_icons_intro.asp). 
 
 To learn more about font awesome, visit their [website](https://fontawesome.com/).
+
+
+
+### **Instructions**
+- There's a lot of small functionalities to this website, it's important for you to plan how you will work on this website. It doesn't have to be perfect, but you need to know exactly what you are going to do.
+- Break the website down to smaller tasks and start working on the tasks one by one.
+
+
+
+For this project, please don't hesitate to use the internet to your advantage and surf the web. Google things and communicate with your team members.<br>
+As always, reach out when you need help.
+
+
+Have fun and good luck!
