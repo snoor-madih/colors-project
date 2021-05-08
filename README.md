@@ -26,5 +26,6 @@ You can make your color picker project better by implementing the following:
 
 
 ### Where to get the icons?
-Use Font awesome. If you don't know about it, you can find how to use it here.<br>
-To learn more about font awesome, visit their website.
+Use Font awesome. If you don't know about it, you can find how to use it [here](https://www.w3schools.com/icons/fontawesome_icons_intro.asp). 
+
+To learn more about font awesome, visit their [website](https://fontawesome.com/).
