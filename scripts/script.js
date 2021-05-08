@@ -14,9 +14,20 @@ function generateColor() {
         }
     index++;});
     console.log(colorPalet);
+    appendColorsToDives();
 }
 
 
 function stateChanging(){
    
+}
+
+
+function appendColorsToDives()
+{
+    for (let i=0;i<colorLock.length ;i++)
+    {
+     let colorDiv = document.querySelectorAll(".color")[i];
+    colorDiv.style.backgroundColor = "#" + colorPalet[i];
+    }
 }
