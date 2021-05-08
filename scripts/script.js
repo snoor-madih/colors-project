@@ -2,6 +2,7 @@ let colorLock = [0, 0, 0, 0, 0];
 let colorPalet = ["0", "0", "0", "0", "0"];
 let lockIcon =document.querySelectorAll(".lock-color");
 
+
 for (let i = 0; i < lockIcon.length; i++) {
     lockIcon[i].addEventListener("click", function() {
         if(lockIcon[i].name==0){
