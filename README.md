@@ -34,7 +34,8 @@ To learn more about font awesome, visit their [website](https://fontawesome.com/
 
 ### **Instructions**
 - There's a lot of small functionalities to this website, it's important for you to plan how you will work on this website. It doesn't have to be perfect, but you need to know exactly what you are going to do.
-- Break the website down to smaller tasks and start working on the tasks one by one.
+- Break the website down into smaller tasks and divide the tasks amongst your team members.
+- Start building!
 
 
 
