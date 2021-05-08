@@ -13,7 +13,7 @@ Your challenge is to build out this cool color generating website that helps the
 - Save color palette with a name to local storage
 ![4](https://user-images.githubusercontent.com/32653855/117524683-0b6d5780-afc7-11eb-9e55-9be924180067.png)
 
-- User should be able to see all of their saved palettes and when clicked on one, it should update the containers to the palette selected.
+- User should be able to see all of their saved palettes in their library and when clicked on one, it should update the containers to the palette selected.
  ![5](https://user-images.githubusercontent.com/32653855/117524756-83d41880-afc7-11eb-9cd7-5976457155ba.png)
 
 
