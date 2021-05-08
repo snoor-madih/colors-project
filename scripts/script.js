@@ -1,6 +1,9 @@
 let colorLock = [0, 0, 0, 0, 0];
 let colorPalet = ["0", "0", "0", "0", "0"];
 let lockIcon =document.querySelectorAll(".lock-color");
+generateColor();
+appendColorsToDives();
+setColorName();
 
 
 for (let i = 0; i < lockIcon.length; i++) {
@@ -32,9 +35,24 @@ function generateColor() {
         }
     index++;});
     console.log(colorPalet);
+    appendColorsToDives();
+    setColorName();
 }
 
 
-function stateChanging(){
-   
+ 
+function appendColorsToDives()
+{
+    for (let i=0;i<colorLock.length ;i++)
+    {
+     let colorDiv = document.querySelectorAll(".color")[i];
+    colorDiv.style.backgroundColor = "#" + colorPalet[i];
+    }
 }
+function setColorName(){
+    for (let index = 0; index <=4; index++) {
+        document.getElementById(`l${index+1}`).innerHTML="#"+colorPalet[index];
+    }
+}
+
+ 
