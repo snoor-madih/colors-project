@@ -1,9 +1,11 @@
 let colorLock = [0, 0, 0, 0, 0];
 let colorPalet = ["0", "0", "0", "0", "0"];
 
-//document.getElementById("generate").addEventListener("click", "generateColor")
 
-function generate() {
+
+document.getElementById("generator").addEventListener("click", generateColor)
+
+function generateColor() {
     let index = 0;
     colorLock.forEach(element => {
         if (element == 0) {
@@ -11,6 +13,10 @@ function generate() {
             colorPalet[index] = randomColor;
         }
     index++;});
+    console.log(colorPalet);
 }
-generate();
-console.log(colorPalet);
+
+
+function stateChanging(){
+   
+}
