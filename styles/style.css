@@ -2,31 +2,6 @@
 {
     text-align: center;
 }
-#c1
-{
-    background-color: firebrick;
-    
-}
-#c2
-{
-    background-color: yellow;
-  
-}
-#c3
-{
-    background-color: green;
-    
-}
-#c4
-{
-    background-color: blue;
-    
-}
-#c5
-{
-    background-color: gray;
-    
-}
 #color-container
 {
     display: flex;
@@ -50,12 +25,24 @@
     cursor:pointer;
     overflow: hidden;
     outline:none;
+    position: absolute;
+    top: 25em;
+    margin: 10px;
+    margin-left: -16px;
 
+}
+.lock-color:hover{
+    color:gray;
+    border:2px solid gray;
+    border-radius: 2px;
 }
 .lable-color
 {
     font-size: large;
     font-weight: bold;
+    padding-top:500px;
+    position: absolute;
+    top: -15em;
 }
 .SRL
 {
@@ -64,4 +51,10 @@
     border-radius: 3px;
     color:white;
     padding: 15px;
+    width: 150px;
+    height: auto;
+}
+
+.SRL:hover{
+    background-color: gray;
 }
