@@ -1,0 +1,67 @@
+#container
+{
+    text-align: center;
+}
+#c1
+{
+    background-color: firebrick;
+    
+}
+#c2
+{
+    background-color: yellow;
+  
+}
+#c3
+{
+    background-color: green;
+    
+}
+#c4
+{
+    background-color: blue;
+    
+}
+#c5
+{
+    background-color: gray;
+    
+}
+#color-container
+{
+    display: flex;
+    flex-direction: row;
+}
+.color
+{
+    width: 20%;
+    height: 500px;
+}
+.lock-color
+{
+    border: none;
+    background-color: none;
+    color:black;
+    font-weight: bold;
+    margin: 20px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+
+}
+.lable-color
+{
+    font-size: large;
+    font-weight: bold;
+}
+.SRL
+{
+    background-color: black;
+    border:0px;
+    border-radius: 3px;
+    color:white;
+    padding: 15px;
+}
