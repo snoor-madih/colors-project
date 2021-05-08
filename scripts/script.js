@@ -1,6 +1,23 @@
 let colorLock = [0, 0, 0, 0, 0];
 let colorPalet = ["0", "0", "0", "0", "0"];
+let lockIcon =document.querySelectorAll(".lock-color");
 
+for (let i = 0; i < lockIcon.length; i++) {
+    lockIcon[i].addEventListener("click", function() {
+        if(lockIcon[i].name==0){
+            lockIcon[i].name=1;
+            colorLock[lockIcon[i].value]=1;
+            let icon=document.getElementById(`i${lockIcon[i].value}`);
+            icon.className="fas fa-lock";
+        }
+        else{
+            lockIcon[i].name=0;
+            colorLock[lockIcon[i].value]=0;
+            let icon=document.getElementById(`i${lockIcon[i].value}`);
+            icon.className="fas fa-lock-open";   
+        }
+    });
+}
 
 
 document.getElementById("generator").addEventListener("click", generateColor)
