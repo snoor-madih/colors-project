@@ -2,20 +2,21 @@
 {
     text-align: center;
 }
+
 #color-container
 {
     display: flex;
     flex-direction: row;
 }
+
 .color
 {
     width: 20%;
-    height: 500px;
+    height: 400px;
 }
+
 .lock-color
 {
-    border: none;
-    background-color: none;
     color:black;
     font-weight: bold;
     margin: 20px;
@@ -26,15 +27,12 @@
     overflow: hidden;
     outline:none;
     position: absolute;
-    top: 25em;
+    top: 20em;
     margin: 10px;
     margin-left: -16px;
-
 }
 .lock-color:hover{
     color:gray;
-    border:2px solid gray;
-    border-radius: 2px;
 }
 .lable-color
 {
@@ -42,30 +40,47 @@
     font-weight: bold;
     padding-top:500px;
     position: absolute;
-    top: -15em;
+    top: -17em;
+    margin-left: -35px;
+}
+
+/* save, generat, library and clear buttons  */
+#forButtons
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+}
+.lableForButton
+{
+    font-weight: bold;
 }
 .SRL
 {
     background-color: black;
     border:0px;
-    border-radius: 3px;
+    border-radius: 6px;
     color:white;
-    padding: 15px;
-    width: 150px;
-    height: auto;
+    padding: 0px 5px 15px 5px;
+    width: 100px;
+    height: 60px;
+    margin: 40px;
 }
 
 .SRL:hover{
     background-color: gray;
 }
+
+/* first popup */
 #popup{
     width: 100%;
     height: 100%;
     position: fixed;
-     display:none;
-     z-index: 1;
+    display:none;
+    z-index: 1;
     background-color: rgba(22,22,22,0.5);
 }
+
 #popup:target {
     visibility: visible;
     display: block;
@@ -74,12 +89,15 @@
     display: flex;
     flex-direction: column;
     width: 20%;
-    background-color:blueviolet;
+    height: 150px;
+    background-color:lightgray;
     text-align:center;
-    padding:5%;
+    padding:2%;
     margin: 0 auto;
     position:relative; 
     top: 25%;
+    border:0px;
+    border-radius: 8px;
 }
 .close {
     color: #aaaaaa;
@@ -99,6 +117,26 @@
     justify-content: space-between;
     line-height: 30px;
 }
+#palletNameDiv button
+{
+    background-color: gray;
+    color: black;
+    border-radius: 3px;
+    margin:10px ;
+    width: 100px;
+    height: 50px;
+    margin-left: 80px;
+
+}
+#palletNameDiv input
+{
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin: 10px;
+    height: 30px;
+}
+
+/* second popup */
 #popup2{
     width: 100%;
     height: 100%;
@@ -116,7 +154,7 @@
     flex-direction: column;
     width: 30%;
     height:250px;
-    background-color:blueviolet;
+    background-color:lightgray;
     text-align:center;
     padding:1%;
     margin: 0 auto;
@@ -124,13 +162,21 @@
     overflow: auto;
     top: 25%;    
     text-align: center;
+    border:0px;
+    border-radius: 10px;
 }
 .savedPalet div{
   padding: 15px;
  }
+ .savedPalet div label{
+    margin-top: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+   }
 .select{
 width :40px;
-background-color: aliceblue;
+background-color: black;
+color: white;
 padding: 5px;
 cursor: pointer;
 }
@@ -141,3 +187,4 @@ cursor: pointer;
 .palet{
     justify-content:space-between;
 }
+

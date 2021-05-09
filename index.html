@@ -6,12 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./styles/style.css" />
+  <!-- save licon -->
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <!-- book icon -->
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <!-- cross icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- generat -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <title>Document</title>
+  <title>Color palet</title>
   <script src="https://kit.fontawesome.com/e06d572612.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <!-- to save the colors -->
   <div id="popup">
     <div id="palletNameDiv">
       <span class="close">&times;</span>
@@ -21,23 +30,12 @@
       <span id="saveStatus"></span>
     </div>
   </div>
+  <!-- the library -->
   <div id="popup2">
     <div id="showPalletDiv">
       <span class="close">&times;</span>
       <label id="header">Pick your pallete</label>
       <div class="savedPalet">
-        // eram boya danawa w namsriwatawa bo away la design yarmatiw ba 
-        <!-- <div class="palet">
-        <label class="savedName">Pallet Name </label>
-        <div class="savedPaletColor">
-          <div class="0">    </div>
-          <div class="1">    </div> 
-          <div class="2">    </div> 
-          <div class="3">    </div> 
-          <div class="4">    </div>
-          <div class="select">Select </div>
-        </div>
-        </div> -->
       </div>
 
     </div>
@@ -65,16 +63,39 @@
           <i class="fas fa-lock-open" id="i4"></i></button>
       </div>
     </div>
-    <button type="button" id="save" class="SRL">SAVE</button>
-    <button type="button" id="generator" class="SRL">GENERATOR</button>
-    <button type="button" id="library" class="SRL">LIBRARY</button>
-    <button type="button" id="clear" class="SRL">CLEAR LIBRARY</button>
+
+    <div id="forButtons">
+      <div><button type="button" id="save" class="SRL">
+          <p class='fas fa-save' style='font-size:24px;color: white;'></p>
+        </button>
+        <br>
+        <label class="lableForButton" for="save">SAVE</label>
+      </div>
+      <div><button type="button" id="generator" class="SRL">
+          <p class="fa fa-refresh" style="font-size:24px;color: white;"></p>
+        </button>
+        <br>
+        <label class="lableForButton" for="generator">GENERATOR</label>
+      </div>
+      <div><button type="button" id="library" class="SRL">
+          <p class='fas fa-book-open' style='font-size:24px; color: white;'></p>
+        </button>
+        <br>
+        <label class="lableForButton" for="library">LIBRARY</label>
+      </div>
+      <div><button type="button" id="clear" class="SRL">
+          <p class="fa fa-remove" style="font-size:24px;color: white;"></p>
+        </button>
+        <br>
+        <label class="lableForButton" for="clear">CLEAR LIBRARY</label>
+      </div>
+
+    </div>
 
 
   </div>
 
   <script src="./scripts/script.js"></script>
-  <script type="text/javascript" src="./data.json"></script>
 </body>
 
 </html>
