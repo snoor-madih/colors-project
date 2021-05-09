@@ -12,6 +12,35 @@
 </head>
 
 <body>
+  <div id="popup">
+    <div id="palletNameDiv">
+      <span class="close">&times;</span>
+      <label>Set a name for your pallete</label>
+      <input type="text" id="palletName" placeholder='Ex:"ancient" "pastel"'>
+      <button>Save</button>
+      <span id="saveStatus"></span>
+    </div>
+  </div>
+  <div id="popup2">
+    <div id="showPalletDiv">
+      <span class="close">&times;</span>
+      <label id="header">Pick your pallete</label>
+      <div class="savedPalet">
+        <div class="palet">
+        <label class="savedName">Pallet Name </label>
+        <div class="savedPaletColor">
+          <div class="0">    </div>
+          <div class="1">    </div> 
+          <div class="2">    </div> 
+          <div class="3">    </div> 
+          <div class="4">    </div>
+          <div class="select">Select </div>
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
   <div id="container">
     <div id="color-container">
       <div id="c1" class="color">
@@ -38,7 +67,10 @@
     <button type="button" id="save" class="SRL">SAVE</button>
     <button type="button" id="generator" class="SRL">GENERATOR</button>
     <button type="button" id="library" class="SRL">LIBRARY</button>
+
+
   </div>
+
   <script src="./scripts/script.js"></script>
 </body>
 
