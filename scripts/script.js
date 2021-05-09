@@ -53,6 +53,13 @@ function setColorName() {
         document.getElementById(`l${index+1}`).innerHTML = "#" + colorPalet[index];
     }
 }
+document.getElementById("clear").addEventListener("click", clear)
+
+function clear() {
+    localStorage.clear();
+    index=0;
+}
+
 
 document.getElementById("save").addEventListener("click", save)
 
@@ -93,12 +100,7 @@ document.getElementById("library").addEventListener("click", library)
 function library() {
  
     document.getElementById('popup2').style.display = "block";
-    // let div = document.getElementById('savedPalet');
-    // while(div.firstChild){
-    //     div.removeChild(div.firstChild);
-    // }
-    
-    
+
     let span = document.getElementsByClassName("close")[1];
     span.onclick = function () {
         document.getElementById('popup2').style.display = "none";
@@ -149,6 +151,7 @@ function library() {
 
         }
     }
+
     // document.querySelector(".select").onclick = function () {
     //     console.log(savedIndex);
     // }
