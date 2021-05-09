@@ -49,12 +49,3 @@ function appendColorsToDives()
     colorDiv.style.backgroundColor = "#" + colorPalet[i];
     }
 }
-
-
-
-
-  const saveBtn = document.getElementById("save");
-  saveBtn.addEventListener("click", function saveColor(){
-
-  });
-  
