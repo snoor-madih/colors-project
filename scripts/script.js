@@ -57,7 +57,7 @@ document.getElementById("clear").addEventListener("click", clear)
 
 function clear() {
     localStorage.clear();
-    index=0;
+    index = 0;
 }
 
 
@@ -79,7 +79,7 @@ function save() {
 
     document.querySelector("#popup button").onclick = function () {
         let paletname = document.getElementById("palletName").value;
-  
+
         if (paletname != "") {
             localStorage.setItem(index, paletname); // saving pallet name in local storage
             localStorage.setItem(paletname, colorPalet); // saving pallet colors with the name 
@@ -98,17 +98,17 @@ function save() {
 document.getElementById("library").addEventListener("click", library)
 
 function library() {
- 
+
     document.getElementById('popup2').style.display = "block";
 
     let span = document.getElementsByClassName("close")[1];
     span.onclick = function () {
         document.getElementById('popup2').style.display = "none";
         let div = document.getElementsByClassName('savedPalet')[0];
-        if(div){
-            while(div.firstChild){
-            div.removeChild(div.firstChild);
-        }
+        if (div) {
+            while (div.firstChild) {
+                div.removeChild(div.firstChild);
+            }
         }
     }
     let savedIndex = localStorage.getItem("index");
@@ -116,11 +116,11 @@ function library() {
     if (localStorage.length == 0) {
         document.getElementById("header").innerHTML = "You don't have any saved palete";
     } else {
-    
+
         document.getElementById("header").innerHTML = "Pick your pallete";
         //setting color
         for (let i = 0; i < index; i++) {
-            console.log("hi");
+
             let savedName = document.createElement("label");
             savedName.className = "savedName";
             let name = localStorage.getItem(i);
@@ -134,7 +134,7 @@ function library() {
             savedPaletColor.className = "savedPaletColor";
 
             let colors = localStorage.getItem(name);
-            colorarr = colors.split(',');
+            let colorarr = colors.split(',');
 
             for (let colorIndex = 0; colorIndex < colorarr.length; colorIndex++) {
 
@@ -145,15 +145,44 @@ function library() {
             }
             let select = document.createElement("div");
             select.className = "select";
-            select.innerHTML="Select";
+            select.value = index;
+            select.innerHTML = "Select";
             savedPaletColor.append(select);
             paletdiv.append(savedPaletColor);
 
         }
     }
+//     selectbutton = document.getElementsByClassName("select");
+//     for (let i = 0; i < selectbutton.length; i++) {
+//         console.log("hi");
+//         selectbutton[i].addEventListener("click", function () {
 
-    // document.querySelector(".select").onclick = function () {
-    //     console.log(savedIndex);
-    // }
 
+//         })
+//     }
+// 
+if (document.body.addEventListener){
+    document.body.addEventListener('click',yourHandler,false);
 }
+else{
+    document.body.attachEvent('onclick',yourHandler);//for IE
+}
+
+function yourHandler(e){
+    e = e || window.event;
+    var target = e.target || e.srcElement;
+    if (target.className.match(/select/))
+    {
+        console.log(e.target.value);
+        let selectedColorName = localStorage.getItem(e.target.value-1);
+        let selectedColor = localStorage.getItem(selectedColorName);
+        let colorarr = selectedColor.split(',');
+        console.log(colorarr);
+        console.log(colorPalet);  
+        colorPalet=colorarr;
+        appendColorsToDives();
+      }
+}
+}
+
+//select button 
