@@ -1,5 +1,6 @@
-let colorLock = [0, 0, 0, 0, 0];
+let colorLock = [0, 0,0 , 0, 0];
 let colorPalet = ["0", "0", "0", "0", "0"];
+
 let lockIcon = document.querySelectorAll(".lock-color");
 generateColor();
 appendColorsToDives();
@@ -53,8 +54,8 @@ function setColorName() {
         document.getElementById(`l${index + 1}`).innerHTML = "#" + colorPalet[index];
     }
 }
-document.getElementById("clear").addEventListener("click", clear)
 
+document.getElementById("clear").addEventListener("click", clear)
 function clear() {
     localStorage.clear();
     index = 0;
@@ -178,6 +179,7 @@ function library() {
             let colorarr = selectedColor.split(',');
             console.log(colorarr);
             console.log(colorPalet);
+            document.getElementById('popup2').style.display = "none";
             colorPalet = colorarr;
             appendColorsToDives();
         }
